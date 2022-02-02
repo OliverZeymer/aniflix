@@ -1,0 +1,15 @@
+.landingSection__heading{
+    color: white;
+    font-size: 3em;
+}
+
+.landingSection__description{
+    color: white;
+    opacity: 70%;
+    margin: 2em 0 2em 0;
+}
+
+.landingSection__img{
+    max-width: 100%;
+    margin: 3em 0 3em 0;
+}

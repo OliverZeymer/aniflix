@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>AniFlix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li><a class="navigation__link" href="#">Home</a></li>
-                <li><a class="navigation__link" href="#">Services</a></li>
-                <li><a class="navigation__link" href="#">Our Project</a></li>
-                <li><a class="navigation__link" href="#">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+
+            <nav class="navigation">
+
+                <a class="navigation__logo" href="#"><img class="navigation__img" src="/assets/img/aniflix.png"
+                        alt="AniFlix Logo"></a>
+                <div>
+                    <label for="check" class="check-label"><img src="/assets/img/menu.svg" alt="Burger ikon"></label>
+                    <input type="checkbox" id="check">
+                    <ul class="navigation__list">
+                        <li>
+                            <a class="navigation__link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="#">Services</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="#">Our Project</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="#">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="landingSection">
+            <h1 class="landingSection__heading">Subscribe for only 8.99$ a month!</h1>
+            <p class="landingSection__description">AniFlix is a streaming service that offers all anime shows and manga
+                you can think off, we will provide the best service for those of you who subscribe to us.</p>
+            <a href="#" class="btn">Subscribe <img src="/assets/img/arrow-up-right.svg" alt=""> </a>
+
+            <img class="landingSection__img" src="/assets/img/levi.png" alt="">
+        </section>
+
+
+
+
+    </div>
+
+    <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
