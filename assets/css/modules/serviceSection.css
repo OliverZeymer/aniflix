@@ -1,0 +1,29 @@
+.serviceSection{
+    padding-top: 3em;
+}
+
+.serviceSection__img{
+    max-width: 100%;
+    max-height: 15vh;
+}
+
+.serviceSection__service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7em;
+}
+
+.serviceSection__description{
+    text-align: center;
+    opacity: 70%;
+}
+
+.serviceSection__serviceHeading{
+    padding:2rem 0 1rem 0;
+}
+
+.serviceSection__heading{
+    font-size: 3em;
+    padding: 5rem 0 5rem 0;
+}   

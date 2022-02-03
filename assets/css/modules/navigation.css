@@ -23,9 +23,9 @@
     transition: transform 0.2s;
     z-index: 99;
     background: linear-gradient(360deg, rgba(64,105,75,1) 0%, rgba(51,75,47,1) 100%);   
-    top: 1em;
-    right: -4px;
-    border-radius: 24px;
+    top: 0;
+    right: -2px; 
+    bottom: 0;
 }
 
 .showMenu {
@@ -52,15 +52,21 @@
     
 }
 
+.navigation__logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Yellowtail';
+    color: white;
+    font-size: 2em;
+    letter-spacing:2px;
+}
+
 .navigation__listItem{
     text-align: center;
     padding: 2em 3em 2em 3em;
     border-bottom: 1px solid black;
 }
 
-.navigation__listItem:last-of-type{
-    border-bottom: none;
-}
 @media only screen and (min-width: 768px) {
     .navigation__list{
         display: flex;

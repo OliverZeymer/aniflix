@@ -214,3 +214,9 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('Yellowtail-Regular.ttf');
+}
+
+
