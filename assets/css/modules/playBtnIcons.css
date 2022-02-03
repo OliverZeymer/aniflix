@@ -1,0 +1,12 @@
+.playBtnIcon1{
+    position: absolute;
+    bottom: -13vh;
+    left: 5vw;
+    right: 0;
+}
+
+.playBtnIcon2{
+    position: absolute;
+    bottom: -35vh;
+    right: 10vw;
+}
