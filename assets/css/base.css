@@ -9,7 +9,7 @@ html,body {
     scroll-behavior:smooth;
     margin: 0;
 	padding: 0;
-    background-color: rgb(39, 39, 39);
+    background-color: #19191B;
 }
 
 a{
@@ -30,6 +30,10 @@ p{
 
 h1, p{
     color: white;
+}
+
+section{
+    background-color: #1E1E20;
 }
 
 .container{
@@ -60,12 +64,14 @@ h1, p{
     align-items: center;
     justify-content: center;
     border: none;
-    height:3.5em;
+    height:3em;
+    width: 8em;
     text-align: center;
     color: white;
     user-select: none;
     background-color: var(--main-page-color);
     font-size: 1.3rem;
+    border-radius: 12px;
 }
 
 .container{

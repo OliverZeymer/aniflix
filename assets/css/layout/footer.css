@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 3em;
+}
+
+.footer small{
+    font-size: 1em;
+}
+
+.footer__navItem{
+    padding-bottom: 3em;
+}
+
+.footer__navLink{
+    color: white;
+}
+
+.footer__logo{
+    justify-content: center;
+}
