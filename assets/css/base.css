@@ -28,6 +28,10 @@ p{
     line-height: 150%;
 }
 
+h1, p{
+    color: white;
+}
+
 .container{
     margin:0 auto;
     width: 70%;
@@ -40,14 +44,16 @@ p{
     font-size: 1em;
     padding: 0.5rem 0 0 1rem;
 }
-    
-.section{
-    padding: 5rem 0 5rem 0;
-}
 
 :root {
     --main-page-color: #334b2f;
 }
+
+
+
+/*GENERIC*/
+
+
 
 .btn{
     display: flex;

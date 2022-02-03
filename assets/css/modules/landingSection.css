@@ -1,10 +1,8 @@
 .landingSection__heading{
-    color: white;
     font-size: 3em;
 }
 
 .landingSection__description{
-    color: white;
     opacity: 70%;
     margin: 2em 0 2em 0;
 }
