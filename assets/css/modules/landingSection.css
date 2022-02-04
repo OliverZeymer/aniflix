@@ -1,6 +1,7 @@
 .landingSection__heading{
     font-size: 3em;
     padding-top: 1em;
+    color: var(--heading-page-color);
 }
 
 .landingSection__description{

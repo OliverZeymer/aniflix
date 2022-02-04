@@ -5,4 +5,5 @@
 .contactSection__heading{
     font-size: 3em;
     padding-bottom: 5rem;
+    color: var(--heading-page-color);
 }

@@ -1,5 +1,6 @@
 .videoSection__heading{
     font-size: 3em;
+    color: var(--heading-page-color);
 }
 
 .videoSection__description{

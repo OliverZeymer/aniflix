@@ -1,5 +1,5 @@
 .serviceSection{
-    mmargin-top: 3em;
+    margin-top: 3em;
 }
 
 .serviceSection__img{
@@ -21,9 +21,11 @@
 
 .serviceSection__serviceHeading{
     padding:2rem 0 1rem 0;
+    color: var(--heading-page-color);
 }
 
 .serviceSection__heading{
     font-size: 3em;
     padding: 5rem 0 5rem 0;
+    color: var(--heading-page-color);
 }   

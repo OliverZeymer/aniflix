@@ -31,11 +31,6 @@ p{
 h1, p{
     color: white;
 }
-
-section{
-    background-color: #1E1E20;
-}
-
 .container{
     margin:0 auto;
     width: 70%;
@@ -51,6 +46,7 @@ section{
 
 :root {
     --main-page-color: #334b2f;
+    --heading-page-color: #42693b;
 }
 
 

@@ -36,6 +36,7 @@
 .arrivalsSection__heading{
     font-size: 2.5em;
     padding-bottom: 1em;
+    color: var(--heading-page-color);
 }
 
 .slider__img--fade{
