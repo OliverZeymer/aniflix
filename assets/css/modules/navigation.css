@@ -75,9 +75,25 @@
         width: 100%;
         justify-content: space-between;
         padding: 1em 5em 1em 5em;
+        position: relative;
+        height: auto;
+        transform: none;
+        background:none;
     }
 
-    .check-label{
+    .navigation__listItem{
+        border: none;
+    }
+
+    .navigation__link{
+        font-size: 1em;
+    }
+
+    .menuIcon, .burger{
         display: none;
+    }
+
+    .navigation__img{
+        max-width: 5vw;
     }
 }

@@ -4,9 +4,9 @@ const nextBtn = sliderContainer.querySelector(".nextBtn")
 var index = 0
 
 const images = [
-    "assets/img/pic1.jpg",
-    "assets/img/pic2.jpg",
-    "assets/img/pic3.png"
+    "assets/img/aot.jpg",
+    "assets/img/blackclover.jpg",
+    "assets/img/steinsgate.jpeg"
 ]
 
 updateSlider();

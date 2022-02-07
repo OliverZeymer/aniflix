@@ -13,3 +13,24 @@
     max-width: 100%;
     margin: 3em 0 3em 0;
 }
+
+.customerName{
+    font-size: 4em;
+    color:var(--heading-page-color);
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .landingSection{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .landingSection__content{
+        width: 40%;
+    }
+
+    .landingSection__img{
+        height: 80vh;
+    }
+}

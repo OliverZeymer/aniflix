@@ -22,10 +22,22 @@
 .serviceSection__serviceHeading{
     padding:2rem 0 1rem 0;
     color: var(--heading-page-color);
+    text-align: center;
 }
 
 .serviceSection__heading{
     font-size: 3em;
     padding: 5rem 0 5rem 0;
     color: var(--heading-page-color);
+    text-align: center;
 }   
+
+
+
+@media only screen and (min-width: 768px) {
+    .serviceSection__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

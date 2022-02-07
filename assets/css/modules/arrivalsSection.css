@@ -1,5 +1,8 @@
 .arrivalsSection{
     margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slider__img{
@@ -41,4 +44,10 @@
 
 .slider__img--fade{
 opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .slider__img{
+        height: 70vh;
+    }
 }
