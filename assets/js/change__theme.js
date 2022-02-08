@@ -27,9 +27,7 @@ greenThemeBtn.addEventListener("click", () => {
     updateUI();
 })
 
-if (localStorage.currentTheme == null) {
-    localStorage.currentTheme = "blue"
-}
+
 function updateUI() {
     if (localStorage.currentTheme == "white") {
         document.body.style.setProperty("--main-page-color", "#afafaf")

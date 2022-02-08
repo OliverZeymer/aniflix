@@ -1,6 +1,6 @@
-const sliderContainer = document.getElementsByClassName("slider")[0];
-const prevBtn = sliderContainer.querySelector(".prevBtn")
-const nextBtn = sliderContainer.querySelector(".nextBtn")
+let sliderContainer = document.getElementsByClassName("slider")[0];
+let prevBtn = sliderContainer.querySelector(".prevBtn")
+let nextBtn = sliderContainer.querySelector(".nextBtn")
 var index = 0
 
 const images = [
@@ -33,7 +33,7 @@ function showPrev() {
 }
 
 function updateSlider() {
-    const image = sliderContainer.querySelector(".slider__img")
+    let image = sliderContainer.querySelector(".slider__img")
 
     image.classList.toggle("slider__img--fade")
     setTimeout(function () {

@@ -1,4 +1,4 @@
-const contactForm = document.getElementsByClassName("contactForm__form")[0]
+let contactForm = document.getElementsByClassName("contactForm__form")[0]
 
 contactForm.addEventListener("submit", submitHandler)
 
@@ -35,7 +35,6 @@ function submitHandler(event) {
     })
 
     if (errorMessages.length === 0) {
-        //send formular
         errorMessage.innerText = "Thanks for your message, you will receive an e-mail soon."
         errorMessage.classList.add("contactForm__errorMessage--success")
         setTimeout(function () { //timeout så success beskeden går væk, hvis nu man ville sende flere beskeder.

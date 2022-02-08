@@ -83,11 +83,16 @@
 
     .navigation__listItem{
         border: none;
+        font-size: 1em;
+        font-weight: 450;
     }
 
     .navigation__link{
-        font-size: 1em;
+        font-size: 1.5em;
+        color: var(--heading-page-color);
     }
+
+    
 
     .menuIcon, .burger{
         display: none;

@@ -1,7 +1,7 @@
 let landingImg = document.querySelector('.landingSection__img');
 
-if (localStorage.currentTheme == null) {
-    localStorage.currentTheme = "blue"
+if (localStorage.currentTheme == undefined) {
+    localStorage.currentTheme = "null"
 } else if (localStorage.currentTheme == "white") {
     document.body.style.setProperty("--main-page-color", "#afafaf")
     document.body.style.setProperty("--heading-page-color", "white")
@@ -26,20 +26,19 @@ if (localStorage.currentTheme == null) {
 
 
 
-const createH2 = document.createElement("h2");
+let createH2 = document.createElement("h2");
 let customerNameContainer = document.querySelector('.customerNameContainer');
 let customerName = document.getElementById('customerName');
 let lsName = localStorage.getItem('storedName');
 let signupBtn = document.querySelector('.signupBtn');
+let loginBtn = document.querySelector('.loginBtn');
 
 if (lsName){
-    console.log(lsName);
     createH2.innerText = "Hello " + lsName + "!"
     customerNameContainer.appendChild(createH2);
     createH2.classList.add("customerName")
     signupBtn.innerHTML = "My profile";
-    signupBtn.onclick = function () {
     signupBtn.href = "profile.html";
-    console.log("hej");
-}
+    loginBtn.innerHTML = "My profile",
+    loginBtn.href = "profile.html";
 }

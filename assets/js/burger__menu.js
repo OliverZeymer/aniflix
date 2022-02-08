@@ -1,8 +1,8 @@
-const navigationList = document.querySelector(".navigation__list");
-const navigationLinks = document.querySelectorAll(".navigation__link");
-const burger = document.querySelector(".burger");
-const closeIcon = document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+let navigationList = document.querySelector(".navigation__list");
+let navigationLinks = document.querySelectorAll(".navigation__link");
+let burger = document.querySelector(".burger");
+let closeIcon = document.querySelector(".closeIcon");
+let menuIcon = document.querySelector(".menuIcon");
 
 
 function toggleMenu() {

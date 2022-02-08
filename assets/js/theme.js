@@ -1,5 +1,5 @@
-if (localStorage.currentTheme == null) {
-    localStorage.currentTheme = "blue"
+if (localStorage.currentTheme == undefined) {
+    localStorage.currentTheme = "null"
 } else if (localStorage.currentTheme == "white") {
     document.body.style.setProperty("--main-page-color", "#afafaf")
     document.body.style.setProperty("--heading-page-color", "white")
@@ -13,3 +13,11 @@ if (localStorage.currentTheme == null) {
     document.body.style.setProperty("--main-page-color", "#334b2f")
     document.body.style.setProperty("--heading-page-color", "#42693b")
 };
+
+let lsName = localStorage.getItem('storedName');
+let loginBtn = document.querySelector('.loginBtn');
+
+if (lsName){
+    loginBtn.innerHTML = "My profile",
+    loginBtn.href = "profile.html";
+}
