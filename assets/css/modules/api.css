@@ -1,7 +1,8 @@
 .apiSection__primaryHeading{
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     padding-bottom: 5rem;
+    color: var(--heading-page-color);
 }
 
 .apiSecondHeading{
@@ -15,15 +16,17 @@
     font-size: 1.5em;
     padding:1em 0 0.5em 0;
 }
-.trailerLink{
+.apiTrailer{
     color: white;
     text-decoration: underline;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .apiHeading{
-    font-size: 4em;
+    font-size: 3em;
     text-decoration: underline;
+    text-align: center;
 }
 
 .apiHeading__link{
@@ -42,7 +45,24 @@
     padding-bottom: 10em;
 }
 
+.apiSynopsis{
+    padding-bottom: 3em;
+}
+
 .apiScore{
     font-size: 2em;
     text-align: center;
+}
+
+.apiImg{
+    max-width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    .apiSection__primaryHeading{
+        font-size: 5em;
+    }
+    .apiHeading{
+        font-size: 4em;
+    }
 }

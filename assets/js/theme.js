@@ -18,6 +18,6 @@ let lsName = localStorage.getItem('storedName');
 let loginBtn = document.querySelector('.loginBtn');
 
 if (lsName){
-    loginBtn.innerHTML = "My profile",
+    loginBtn.innerHTML = "Profile",
     loginBtn.href = "profile.html";
 }

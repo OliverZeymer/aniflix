@@ -39,6 +39,6 @@ if (lsName){
     createH2.classList.add("customerName")
     signupBtn.innerHTML = "My profile";
     signupBtn.href = "profile.html";
-    loginBtn.innerHTML = "My profile",
+    loginBtn.innerHTML = "Profile",
     loginBtn.href = "profile.html";
 }

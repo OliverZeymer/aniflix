@@ -90,6 +90,13 @@
     .navigation__link{
         font-size: 1.5em;
         color: var(--heading-page-color);
+        transition: 0.2s ease;
+    }
+
+    .navigation__link:hover{
+        font-weight: bolder;
+        transition: 0.2s ease;
+        font-size: 1.6em;
     }
 
     

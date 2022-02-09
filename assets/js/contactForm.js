@@ -35,6 +35,7 @@ function submitHandler(event) {
     })
 
     if (errorMessages.length === 0) {
+        contactForm.reset()
         errorMessage.innerText = "Thanks for your message, you will receive an e-mail soon."
         errorMessage.classList.add("contactForm__errorMessage--success")
         setTimeout(function () { //timeout så success beskeden går væk, hvis nu man ville sende flere beskeder.
