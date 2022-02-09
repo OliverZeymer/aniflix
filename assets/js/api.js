@@ -7,10 +7,10 @@ async function getAnime() {
     let i = 1;
     console.log(json);
     json.data.forEach(element => {
-        const newItem = `
-        <h1 class="apiHeading"><a class="apiHeading__link" href="${element. url}" target="_blank">${i}. ${element.title}</a></h1>
+        const NEW_ITEM = `
+        <h1 class="apiHeading"><a class="apiHeading__link" href="${element.url}" target="_blank">${i}. ${element.title}</a></h1>
         <h2 class="apiSecondHeading">${element.title_japanese}</h2>
-        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title} image">
+        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title} Image">
         <h3 class="apiThirdHeading">Synopsis:</h3>
         <p class="apiSynopsis">${element.synopsis}</p>
         <p class="apiScore">Score: ${element.score}⭐</p>
@@ -25,7 +25,7 @@ async function getAnime() {
         let apiSection = document.querySelector('.apiSection');
         const article = document.createElement("article")
         article.classList.add("apiArticle")
-        article.innerHTML = newItem
+        article.innerHTML = NEW_ITEM
         apiSection.appendChild(article)
         i++
     });
