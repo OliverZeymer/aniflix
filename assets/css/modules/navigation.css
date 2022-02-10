@@ -74,13 +74,16 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
-        padding: 1em 5em 1em 5em;
+        padding: 1em 1em 1em 5em;
         position: relative;
         height: auto;
         transform: none;
         background:none;
     }
 
+    .navigation{
+        height: 20vh;
+    }
     .navigation__listItem{
         border: none;
         font-size: 1em;
@@ -91,6 +94,8 @@
         font-size: 1.2em;
         color: var(--heading-page-color);
         transition: 0.2s ease;
+        width: 110%;
+        height: 110%;
     }
 
     .navigation__link:hover{

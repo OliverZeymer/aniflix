@@ -3,8 +3,6 @@ let blueThemeBtn = document.querySelector('.blueTheme');
 let redThemeBtn = document.querySelector('.redTheme');
 let greenThemeBtn = document.querySelector('.greenTheme');
 
-
-
 updateUI()
 
 whiteThemeBtn.addEventListener("click", () => {
