@@ -28,8 +28,23 @@ async function getAnime() {
         article.innerHTML = NEW_ITEM
         apiSection.appendChild(article)
         i++
-    });
+        let searchBar = document.querySelector('#searchBar');
+
+
+
+    })
+
 
 }
+searchBar.addEventListener('input', function () {
+    let apiHeading = document.querySelectorAll('.apiHeading');
+    apiHeading.forEach(element => {
+        if (!element.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
+            element.parentElement.style.display = "none"
+        } else{
+            element.parentElement.style.display = "flex"
+        }
+    })
+});
 
 getAnime()

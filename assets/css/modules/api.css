@@ -7,8 +7,8 @@
 
 .apiSecondHeading{
     color: white;
-    font-size: 2em;
-    padding-bottom: 1em;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .apiThirdHeading{
@@ -24,45 +24,59 @@
 }
 
 .apiHeading{
-    font-size: 3em;
     text-decoration: underline;
     text-align: center;
 }
 
 .apiHeading__link{
     color: white;
+    font-size: 3rem;
 }
 
 .apiInfo{
     padding-top: 1em;
     text-align: unset;
+    font-size: 1rem;
+}
+
+#searchBar{
+    margin: auto auto 2rem auto;
+    display: flex;
+    border-radius: 24px;
+    padding-left: 0.5em;
+    outline: 0;
+    background-color: rgb(189, 189, 189);
+    border: none;
 }
 
 .apiArticle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10em;
+    margin-bottom: 3em;
+    padding: 2em;
+    border: var(--main-page-color) 3px solid;
+    border-radius: 50px;
+    background-color: rgb(39, 39, 39);
 }
 
 .apiSynopsis{
-    padding-bottom: 3em;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
 }
 
 .apiScore{
-    font-size: 2em;
+    font-size: 1rem;
     text-align: center;
 }
 
 .apiImg{
-    max-width: 80%;
+    max-width: 200px;
 }
 
 @media only screen and (min-width: 768px) {
     .apiSection__primaryHeading{
-        font-size: 5em;
-    }
-    .apiHeading{
-        font-size: 4em;
+        font-size: 3rem;
+        padding-bottom: 2rem;
     }
 }
