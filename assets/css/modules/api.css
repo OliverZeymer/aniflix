@@ -7,7 +7,7 @@
 
 .apiElements{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
     width: 100%;
 }
@@ -66,6 +66,14 @@
     border: var(--main-page-color) 3px solid;
     border-radius: 12px;
     background-color: rgb(39, 39, 39);
+    cursor: pointer;
+    height: 500px;
+    transition: all .2s ease-in-out; 
+}
+
+.apiArticle:hover{
+    transform: scale(1.05); 
+    transition: all .2s ease-in-out; 
 }
 
 .apiSynopsis{
@@ -79,7 +87,7 @@
 }
 
 .apiImg{
-    max-width: 200px;
+    max-width: 150px;
 }
 
 @media only screen and (min-width: 768px) {

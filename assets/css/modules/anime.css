@@ -1,0 +1,23 @@
+.animeLink{
+    color: white;
+    text-decoration: underline;
+}
+
+.modal-outer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    top:0;
+    left:0;
+    display: flex; /*Vi ændrer denne property med JS til display: flex*/
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.trailer{
+    display:none;
+}
