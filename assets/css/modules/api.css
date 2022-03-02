@@ -76,18 +76,26 @@
     transition: all .2s ease-in-out; 
 }
 
-.apiSynopsis{
-    padding-bottom: 1rem;
-    font-size: 0.8rem;
-}
-
 .apiScore{
     font-size: 1rem;
     text-align: center;
 }
 
 .apiImg{
-    max-width: 150px;
+    width: 160px;
+    height: 220px;
+    margin-bottom: 1vh;
+}
+
+.pageNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+.prevImg, .nextImg{
+    border-radius: 50px;
+    border: 2px solid white;
 }
 
 @media only screen and (min-width: 768px) {

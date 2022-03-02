@@ -21,3 +21,57 @@
 .trailer{
     display:none;
 }
+
+.singleAnimeImg{
+    max-height: 500px;
+}
+
+.synopsis{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.singleAnimeInfo{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+.trailerLink{
+    color: white;
+    font-size: 3rem;
+}
+
+.singleAnime{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.open .modal-inner{
+    transform: scale(1);
+}
+
+.modal-inner{
+    position: relative;
+    transform: scale(0.3);
+    transition: transform 0.5s;
+    display: flex;
+    align-items: flex-start;
+}
+
+.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.close-modal{
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
