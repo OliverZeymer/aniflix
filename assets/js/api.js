@@ -9,10 +9,10 @@ async function getAnime() {
     console.log(json);
     json.data.forEach(element => {
         const NEW_ITEM = `
-        <article class="apiArticle" onclick="window.location.href='/anime.html?anime=${element.title}'">
-        <h1 class="apiHeading"><a class="apiHeading__link" href="${element.url}" target="_blank">${i}. ${element.title}</a></h1>
+        <article class="apiArticle" onclick="window.location.href='/anime.html?anime=${element.title_english}'">
+        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title_english} Image">
+        <h1 class="apiHeading"><a class="apiHeading__link" href="/anime.html?anime=${element.title_english}" target="_blank">${i}. ${element.title_english}</a></h1>
         <h2 class="apiSecondHeading">${element.title_japanese}</h2>
-        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title} Image">
         <p class="apiScore">Score: ${element.score}⭐</p>
         <p class="apiScore">Members: ${element.members}</p>
         </article>
@@ -29,10 +29,10 @@ async function getAnime() {
     console.log(json2);
     json2.data.forEach(element => {
         const NEW_ITEM = `
-        <article class="apiArticle" onclick="window.location.href='/anime.html'">
-        <h1 class="apiHeading"><a class="apiHeading__link" href="${element.url}" target="_blank">${i}. ${element.title}</a></h1>
+        <article class="apiArticle" onclick="window.location.href='/anime.html?anime=${element.title_english}'">
+        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title_english} Image">
+        <h1 class="apiHeading"><a class="apiHeading__link" href="/anime.html?anime=${element.title_english}" target="_blank">${i}. ${element.title_english}</a></h1>
         <h2 class="apiSecondHeading">${element.title_japanese}</h2>
-        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title} Image">
         <p class="apiScore">Score: ${element.score}⭐</p>
         <p class="apiScore">Members: ${element.members}</p>
         </article>
