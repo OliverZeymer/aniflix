@@ -40,6 +40,13 @@
 .trailerLink{
     color: white;
     font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.animeHeading{
+    font-size: 2.5rem;
 }
 
 .singleAnime{

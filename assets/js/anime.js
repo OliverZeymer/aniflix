@@ -11,16 +11,16 @@ async function getSingleAnime(anime) {
     document.title += " - " + singleAnime.title_english
     console.log(singleAnime);
     const NEW_ITEM = `
-            <h1>${singleAnime.title_english}</h1>
+            <h1 class="animeHeading">${singleAnime.title_english}</h1>
             <p class="singleAnimeInfo">${singleAnime.title_japanese}</p>
             <p class="singleAnimeInfo">${singleAnime.year}</p>
             <img class="singleAnimeImg" src="${singleAnime.images.webp.large_image_url}">
-            <a class="trailerLink" href="#trailer" onclick="popUpTrailer();"> ▶Watch Trailer</a>
+            <button class="trailerLink" onclick="popUpTrailer();"> ▶Watch Trailer</button>
             <h2 class="singleAnimeInfo">Synopsis:</h2>
             <p class="synopsis">${singleAnime.synopsis}</p>
             <p class="singleAnimeInfo">Rated: ${singleAnime.score}⭐</p>
             <p class="singleAnimeInfo">Episodes: ${singleAnime.episodes}</p>
-            <a class="animeLink singleAnimeInfo" href="${singleAnime.url}" target="_blank">MAL LINK</a>
+            <a class="animeLink singleAnimeInfo" href="${singleAnime.url}" target="_blank">MAL LINK 🡥</a>
             <p class="singleAnimeInfo">Aired from: ${singleAnime.aired.prop.from.year} - ${singleAnime.aired.prop.to.year}</p>
             <p class="singleAnimeInfo">Licensor: ${singleAnime.licensors[0].name}</p>
             <p class="singleAnimeInfo">Producers: ${singleAnime.producers.map(producers => ' ' + producers.name)}</p>    
