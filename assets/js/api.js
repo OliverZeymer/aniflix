@@ -10,12 +10,12 @@ async function getAnime() {
     let response = await fetch(API_URL);
     let json = await response.json();
     const pages = Math.ceil(23593 / limit)
-    if (!json.meta){
+    if (!json.meta) {
         Math.ceil(23593 / limit)
-    } else{
+    } else {
         Math.ceil(json.meta.total / limit)
     }
-    
+
     prevBtn.href = `?page=${currentPage - 1}`
     nextBtn.href = `?page=${currentPage + 1}`
     if (currentPage > pages) {
@@ -23,7 +23,7 @@ async function getAnime() {
         prevBtn.href = `?page=${currentPage - 1}`
         nextBtn.href = `?page=${currentPage}`
     }
-    
+
     if (currentPage < 1) {
         currentPage = 1
         prevBtn.href = `?page=${currentPage}`
@@ -32,17 +32,34 @@ async function getAnime() {
     console.log(pages, currentPage, json);
 
     json.data.forEach(element => {
+        const article = document.createElement("article")
+        article.classList.add("apiArticle")
+        article.addEventListener("click", function(){
+            window.location.href =  `/anime.html?anime=${element.title_english}&page=${currentPage}`
+        })
+
         const NEW_ITEM = `
-        <article class="apiArticle" onclick="window.location.href='/anime.html?anime=${element.title_english}&page=${currentPage}'">
-        <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title_english} Image">
+        <img class="apiImg" src="/assets/img/loading.gif" alt ="${element.title_english} Image">
         <h1 class="apiHeading"><a class="apiHeading__link" href="/anime.html?anime=${element.title_english}" target="_blank">${element.popularity}. ${element.title_english}</a></h1>
         <h2 class="apiSecondHeading">${element.title_japanese}</h2>
         <p class="apiScore">Score: ${element.score}⭐</p>
         <p class="apiScore">Members: ${element.members}</p>
-        </article>
     `
+        article.innerHTML += NEW_ITEM
         let apiElements = document.querySelector('.apiElements');
-        apiElements.innerHTML += NEW_ITEM
+        apiElements.appendChild(article)
+
+
+        const image = new Image()
+        image.src = `${element.images.webp.large_image_url}`
+        //image.style.display = "none"
+
+
+        const finishedImage = article.querySelector("img")
+
+        image.onload = function () {
+            finishedImage.src = image.src
+        }
     })
 }
 

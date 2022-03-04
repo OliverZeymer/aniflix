@@ -13,7 +13,7 @@ async function searchAnime() {
     apiSectionHeading.innerHTML = `We Found ${json.data.length} Results!`
     json.data.forEach(element => {
         const NEW_ITEM = `
-        <article class="apiArticle" onclick="window.location.href='/anime.html?anime=${element.title_english}'">
+        <article class="apiArticle" onclick="window.location.href='/search_anime.html?anime=${element.title_english}&q=${searchParams}'">
         <img class="apiImg" src="${element.images.webp.large_image_url}" alt ="${element.title_english} Image">
         <h1 class="apiHeading"><a class="apiHeading__link" href="/anime.html?anime=${element.title_english}" target="_blank">${element.popularity}. ${element.title_english || element.title}</a></h1>
         <h2 class="apiSecondHeading">${element.title_japanese}</h2>

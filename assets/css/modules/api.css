@@ -94,6 +94,7 @@
     width: 160px;
     height: 220px;
     margin-bottom: 1vh;
+    border-radius: 5px;
 }
 
 .pageNavigation{
@@ -107,6 +108,9 @@
     border: 2px solid white;
 }
 
+.characterImg{
+    border-radius: 5px;
+}
 @media only screen and (min-width: 768px) {
     .apiSection__primaryHeading{
         font-size: 3rem;

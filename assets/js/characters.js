@@ -34,7 +34,7 @@ async function getAnimeCharacter() {
     json.data.forEach(element => {
         const NEW_ITEM = `
         <article class="apiArticle" onclick="window.location.href='/singleCharacter.html?character=${element.name}&page=${currentPage}'">
-        <img src="${element.images.webp.image_url}" alt ="${element.name} Image">
+        <img class="characterImg" src="${element.images.webp.image_url}" alt ="${element.name} Image">
         <h1 class="apiHeading"><a class="apiHeading__link" href="/anime.html?anime=${element.name}" target="_blank">${element.name}</a></h1>
         <h2 class="apiSecondHeading">${element.name_kanji}</h2>
         <p class="apiScore">Favorites ${element.favorites}⭐</p>
