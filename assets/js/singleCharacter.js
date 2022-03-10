@@ -8,7 +8,7 @@ async function getSingleCharacter(character) {
     let json = await response.json();
     console.log(json, character);
     let singleCharacter = json.data.find(element => element.name === character)
-    document.title += " - " + singleCharacter.title_english
+    document.title += " - " + singleCharacter.name
     console.log(singleCharacter);
     const NEW_ITEM = `
             <h1 class="CharacterHeading">${singleCharacter.name}</h1>

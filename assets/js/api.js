@@ -65,7 +65,7 @@ async function getAnime() {
 
 
 let pageIdentifier = document.querySelector('.pageIdentifier');
-pageIdentifier.innerHTML = "Page: " + currentPage
+pageIdentifier.innerHTML = "Page: " + currentPage + " / 983"
 
 getAnime()
 
