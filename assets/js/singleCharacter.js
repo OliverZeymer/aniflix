@@ -1,41 +1,7 @@
-const limit = 24
-    const queries = new URLSearchParams(window.location.search)
-    const currentPage = queries.get("page")
-   const API_URL = `https://api.jikan.moe/v4/characters?order_by=favorites&sort=desc&limit=${limit}&page=${currentPage}`; 
-
-async function getSingleCharacter(character) {
-    let response = await fetch(API_URL);
-    let json = await response.json();
-    console.log(json, character);
-    let singleCharacter = json.data.find(element => element.name === character)
-    document.title += " - " + singleCharacter.name
-    console.log(singleCharacter);
-    const NEW_ITEM = `
-            <h1 class="CharacterHeading">${singleCharacter.name}</h1>
-            <img src="${singleCharacter.images.webp.image_url}">
-            <p class="singleCharacterInfo">${singleCharacter.favorites}</p>
-            <p class="singleCharacterInfo">${singleCharacter.about}</p>
+const limit=24,queries=new URLSearchParams(window.location.search),currentPage=queries.get("page"),API_URL=`https://api.jikan.moe/v4/characters?order_by=favorites&sort=desc&limit=${limit}&page=`+currentPage;async function getSingleCharacter(a){let e=await fetch(API_URL),t=await e.json();console.log(t,a);var r=t.data.find(e=>e.name===a),r=(document.title+=" - "+r.name,console.log(r),`
+            <h1 class="CharacterHeading">${r.name}</h1>
+            <img src="${r.images.webp.image_url}">
+            <p class="singleCharacterInfo">${r.favorites}</p>
+            <p class="singleCharacterInfo">${r.about}</p>
             
-            `
-    let singleAnimeElement = document.getElementsByClassName("singleAnime")[0]
-    singleAnimeElement.innerHTML += NEW_ITEM
-}
-
-
-
-const character = queries.get("character")
-if (!character) {
-    window.location.href = "/404.html"
-} else {
-    getSingleCharacter(character)
-}
-
-
-function popUpTrailer(event) {
-    let closeBtn = document.querySelector(".close-modal");
-    let modalOuter = document.querySelector(".modal-outer");
-    modalOuter.classList.add("open"); 
-    modalOuter.addEventListener("click", function(event){
-        modalOuter.classList.remove("open")
-    });
-}
+            `);let c=document.getElementsByClassName("singleAnime")[0];c.innerHTML+=r}const character=queries.get("character");function popUpTrailer(e){document.querySelector(".close-modal");let a=document.querySelector(".modal-outer");a.classList.add("open"),a.addEventListener("click",function(e){a.classList.remove("open")})}character?getSingleCharacter(character):window.location.href="/404.html";

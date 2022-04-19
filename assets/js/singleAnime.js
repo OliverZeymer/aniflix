@@ -1,55 +1,21 @@
-const limit = 24
-    const queries = new URLSearchParams(window.location.search)
-    const currentPage = queries.get("page")
-   const API_URL = `https://api.jikan.moe/v4/anime?order_by=members&sort=desc&limit=${limit}&page=${currentPage}`; 
-
-async function getSingleAnime(anime) {
-    let response = await fetch(API_URL);
-    let json = await response.json();
-    console.log(json, anime);
-    let singleAnime = json.data.find(element => element.title_english === anime)
-    document.title += " - " + singleAnime.title_english
-    console.log(singleAnime);
-    const NEW_ITEM = `
-            <h1 class="animeHeading">${singleAnime.title_english}</h1>
-            <p class="singleAnimeInfo">${singleAnime.title_japanese}</p>
-            <p class="singleAnimeInfo">${singleAnime.year}</p>
-            <img class="singleAnimeImg" src="${singleAnime.images.webp.large_image_url}">
+const limit=24,queries=new URLSearchParams(window.location.search),currentPage=queries.get("page"),API_URL=`https://api.jikan.moe/v4/anime?order_by=members&sort=desc&limit=${limit}&page=`+currentPage;async function getSingleAnime(i){let e=await fetch(API_URL),n=await e.json(),s=(console.log(n,i),n.data.find(e=>e.title_english===i));document.title+=" - "+s.title_english,console.log(s);var a=`
+            <h1 class="animeHeading">${s.title_english}</h1>
+            <p class="singleAnimeInfo">${s.title_japanese}</p>
+            <p class="singleAnimeInfo">${s.year}</p>
+            <img class="singleAnimeImg" src="${s.images.webp.large_image_url}">
             <button class="trailerLink" onclick="popUpTrailer();"> ▶Watch Trailer</button>
             <h2 class="singleAnimeInfo">Synopsis:</h2>
-            <p class="synopsis">${singleAnime.synopsis}</p>
-            <p class="singleAnimeInfo">Rated: ${singleAnime.score}⭐</p>
-            <p class="singleAnimeInfo">Episodes: ${singleAnime.episodes}</p>
-            <a class="animeLink singleAnimeInfo" href="${singleAnime.url}" target="_blank">MAL LINK 🡥</a>
-            <p class="singleAnimeInfo">Aired from: ${singleAnime.aired.prop.from.year} - ${singleAnime.aired.prop.to.year}</p>
-            <p class="singleAnimeInfo">Licensor: ${singleAnime.licensors[0].name}</p>
-            <p class="singleAnimeInfo">Producers: ${singleAnime.producers.map(producers => ' ' + producers.name)}</p>    
+            <p class="synopsis">${s.synopsis}</p>
+            <p class="singleAnimeInfo">Rated: ${s.score}⭐</p>
+            <p class="singleAnimeInfo">Episodes: ${s.episodes}</p>
+            <a class="animeLink singleAnimeInfo" href="${s.url}" target="_blank">MAL LINK 🡥</a>
+            <p class="singleAnimeInfo">Aired from: ${s.aired.prop.from.year} - ${s.aired.prop.to.year}</p>
+            <p class="singleAnimeInfo">Licensor: ${s.licensors[0].name}</p>
+            <p class="singleAnimeInfo">Producers: ${s.producers.map(e=>" "+e.name)}</p>    
             <div class="modal-outer">
                 <div class="modal-inner">
-                <iframe width="470" height="315" src="${singleAnime.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="470" height="315" src="${s.trailer.embed_url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <button class="close-modal">X</button>
                 </div>
             </div>
-            `
-    let singleAnimeElement = document.getElementsByClassName("singleAnime")[0]
-    singleAnimeElement.innerHTML += NEW_ITEM
-}
-
-
-
-const anime = queries.get("anime")
-if (!anime) {
-    window.location.href = "/404.html"
-} else {
-    getSingleAnime(anime)
-}
-
-
-function popUpTrailer(event) {
-    let closeBtn = document.querySelector(".close-modal");
-    let modalOuter = document.querySelector(".modal-outer");
-    modalOuter.classList.add("open"); 
-    modalOuter.addEventListener("click", function(event){
-        modalOuter.classList.remove("open")
-    });
-}
+            `;let l=document.getElementsByClassName("singleAnime")[0];l.innerHTML+=a}const anime=queries.get("anime");function popUpTrailer(e){document.querySelector(".close-modal");let i=document.querySelector(".modal-outer");i.classList.add("open"),i.addEventListener("click",function(e){i.classList.remove("open")})}anime?getSingleAnime(anime):window.location.href="/404.html";

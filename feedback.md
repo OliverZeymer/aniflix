@@ -1,1 +1,0 @@
-Jeg fik noget feedback om at fixe nav menuen så når man hover på den skal den ikke skubber til indholdet på siden og at mit strong tag i naven på "top 25 anime" skiftede tema lidt forsinket i forhold til de andre elementer.
