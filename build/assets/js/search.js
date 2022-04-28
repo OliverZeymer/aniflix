@@ -1,0 +1,7 @@
+const limit=24,queries=new URLSearchParams(window.location.search),currentPage=queries.get("page"),searchParams=queries.get("search"),API_URL=`https://api.jikan.moe/v4/anime?q=${searchParams}&order_by=members`,apiSectionHeading=document.querySelector(".apiSection__primaryHeading");async function searchAnime(){let e=await fetch(API_URL),a=await e.json();console.log(a),apiSectionHeading.innerHTML=`We Found ${a.data.length} Results!`,a.data.forEach(e=>{const a=document.createElement("article");a.classList.add("apiArticle"),a.addEventListener("click",function(){window.location.href=`/anime.html?anime=${e.title_english}&page=`+currentPage});var i=`
+        <img class="apiArticle__img" src="/assets/img/loading.gif" alt ="${e.title_english} Image">
+        <h1 class="apiArticle__primaryHeading"><a class="apiArticle__link" href="/anime.html?anime=${e.title_english}" target="_blank">${e.popularity}. ${e.title_english}</a></h1>
+        <h2 class="apiArticle__secondaryHeading">${e.title_japanese}</h2>
+        <p class="apiArticle__score">Score: ${e.score}⭐</p>
+        <p class="apiArticle__members">Members: ${e.members}</p>
+    `;a.innerHTML+=i;let t=document.querySelector(".apiElements");t.appendChild(a);const r=new Image,n=(r.src=""+e.images.webp.large_image_url,a.querySelector("img"));r.onload=function(){n.src=r.src}})}searchAnime();
