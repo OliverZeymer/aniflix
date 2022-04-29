@@ -1,0 +1,36 @@
+.landingSection__heading{
+    font-size: 3em;
+    padding-top: 1em;
+    color: var(--heading-page-color);
+}
+
+.landingSection__description{
+    opacity: 70%;
+    margin: 2em 0 2em 0;
+}
+
+.landingSection__img{
+    max-width: 100%;
+    margin: 3em 0 3em 0;
+}
+
+.customerName{
+    font-size: 4em;
+    color:var(--heading-page-color);
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .landingSection{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .landingSection__content{
+        width: 40%;
+    }
+
+    .landingSection__img{
+        height: 80vh;
+    }
+}

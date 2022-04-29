@@ -1,0 +1,122 @@
+.apiMainHeading{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 5rem;
+    color: var(--heading-page-color);
+}
+
+.apiElements{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    width: 100%;
+}
+
+.apiTrailer{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.apiInfo{
+    padding-top: 1em;
+    text-align: unset;
+    font-size: 1rem;
+}
+
+#searchBar{
+    margin: auto auto 2rem auto;
+    display: flex;
+    border-radius: 24px;
+    padding-left: 0.5em;
+    outline: 0;
+    background-color: rgb(189, 189, 189);
+    border: none;
+}
+
+.apiAnnouncement{
+    color: var(--heading-page-color);
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.apiArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    border: var(--main-page-color) 3px solid;
+    border-radius: 12px;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+    height: 500px;
+    transition: all .2s ease-in-out; 
+    overflow: hidden;
+
+        &:hover{
+        transform: scale(1.05); 
+        transition: all .2s ease-in-out; 
+    }
+
+    &__score{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: auto;
+    }
+    &__img{
+        width: 160px;
+        height: 220px;
+        margin-bottom: 1vh;
+        border-radius: 5px;
+    }
+    &__primaryHeading{
+        text-align: center;
+        font-size: 0.1rem;
+        
+      
+    }
+    &__link{
+        color: white;
+        font-size: 2rem;
+        margin: auto 0;
+
+    }
+    &__secondaryHeading{
+        color: white;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;        
+        margin: auto 0;
+    }   
+}
+
+
+
+
+
+
+
+.pageNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+.prevImg, .nextImg{
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.characterImg{
+    border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+    .apiMainHeading{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+}

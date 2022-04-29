@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniFlix</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navigation">
+                <a class="navigation__logo" href="index.html"><img class="navigation__img" src="assets/img/aniflix.png"
+                        alt="AniFlix Logo">AniFlix</a>
+                <ul class="navigation__list">
+                    <li class="navigation__listItem">
+                        <a class="navigation__link" href="index.html">Home</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a class="navigation__link" href="change__theme.html">Change Theme</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a class="navigation__link" href="api.html">Top <strong>ANIME!</strong></a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a class="navigation__link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a class="navigation__link loginBtn" href="signup.html">Log in</a>
+                    </li>
+                </ul>
+                <button class="burger">
+                    <i class="menuIcon"> <img src="assets/img/menu.svg" alt=""> </i>
+                    <i class="closeIcon"> <img src="assets/img/x.svg" alt=""> </i>
+                </button>
+            </nav>
+        </header>
+
+
+        <main>
+            <h1 class="apiSection__primaryHeading"></h1>
+            <form action="search_results.html">
+                <input type="text" id="searchBar" name="search" placeholder="Search..." autocomplete="off">
+            </form>
+            
+            <section class="apiElements">
+
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__navList">
+                    <li class="footer__navItem"><a class="navigation__logo footer__logo" href="#"><img
+                                class="navigation__img" src="assets/img/aniflix.png" alt="AniFlix Logo">AniFlix</a>
+                    </li>
+                    <li class="footer__navItem"> <a class="footer__navLink" href="">Support</a> </li>
+                    <li class="footer__navItem"> <a class="footer__navLink" href="">Privacy Policy</a> </li>
+                    <li class="footer__navItem"> <a class="footer__navLink" href="">Terms And Conditions</a> </li>
+                    <small>&copy; 2022 Aniflix, All rights reserved</small>
+                </ul>
+
+            </nav>
+
+        </footer>
+    </div>
+    <script src="assets/js/search.js" type="module"></script>
+    <script src="assets/js/burger__menu.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

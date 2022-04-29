@@ -1,0 +1,15 @@
+.themeSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80vh;
+    padding: 5em 0 5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .themeSection{
+       flex-direction: row; 
+    }
+    
+}

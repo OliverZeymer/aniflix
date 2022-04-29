@@ -1,0 +1,18 @@
+.playBtnIcon1{
+    position: absolute;
+    bottom: -13vh;
+    left: 5vw;
+    right: 0;
+}
+
+.playBtnIcon2{
+    position: absolute;
+    bottom: -40vh;
+    right: 10vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .playBtnIcon1, .playBtnIcon2{
+        display: none;
+    }
+}

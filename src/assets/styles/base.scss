@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Padding får elementerne til at vokse indad*/
+    font-family: 'Graphik';
+    transition: 0.2s ease;
+}
+
+html,body {
+    scroll-behavior:smooth;
+    margin: 0;
+	padding: 0;
+    background-color: #19191B;
+}
+
+a{
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+strong{
+    transition: none;
+}
+
+p{
+    line-height: 150%;
+}
+
+h1, p{
+    color: white;
+}
+.container{
+    margin:0 auto;
+    width: 70%;
+}
+
+::placeholder{
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 450;
+    font-size: 1em;
+
+}
+
+:root {
+    --main-page-color: #334b2f;
+    --heading-page-color: #42693b;
+}
+
+
+
+/*GENERIC*/
+
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height:3em;
+    width: 8em;
+    text-align: center;
+    color: white;
+    user-select: none;
+    background-color: var(--main-page-color);
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    &:hover{
+        scale: 1.1;
+        background-color: #fff;
+        color: var(--main-page-color);
+    }
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.rounded{
+    border-radius: 24px;
+}
+
+.lessRounded{
+    border-radius: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 75%;
+    }
+}
