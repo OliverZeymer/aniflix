@@ -1,1 +1,0 @@
-let logOutBtn=document.querySelector(".logOut__btn");logOutBtn.addEventListener("click",function(t){localStorage.removeItem("storedName"),window.location.href="index.html"});
